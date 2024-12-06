@@ -18,9 +18,9 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.NotificationCompat;
-import android.support.v7.graphics.Palette;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.core.app.NotificationCompat;
+import androidx.palette.graphics.Palette;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -237,7 +237,7 @@ public class Player extends Fragment implements MusicPlayer, Serializable {
                             .addAction(R.drawable.ic_skip_previous_black_24dp, "Previous", prevTrack)
                             .addAction(R.drawable.ic_pause_black_24dp, "Pause", playPause)
                             .addAction(R.drawable.ic_skip_next_black_24dp, "Next", nextTrack)
-                            .setStyle(new android.support.v4.media.app.NotificationCompat.MediaStyle())
+                            .setStyle(new androidx.media.app.NotificationCompat.MediaStyle())
                             .setContentTitle(book.getTitle())
                             .setContentText(book.getCurrentChapter().getTitle())
                             .setLargeIcon(thumbnailBitmap)

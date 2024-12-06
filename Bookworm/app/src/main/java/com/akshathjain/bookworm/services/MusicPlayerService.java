@@ -13,8 +13,8 @@ import android.media.MediaPlayer;
 import android.os.Binder;
 import android.os.IBinder;
 import android.os.PowerManager;
-import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationCompat;
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 
 import com.akshathjain.bookworm.R;
 import com.akshathjain.bookworm.interfaces.MusicPlayer;

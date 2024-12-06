@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 31
-    buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.akshathjain.bookworm"
         minSdkVersion 31
@@ -39,15 +38,18 @@ dependencies {
     repositories {
         mavenCentral()
     }
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
-    implementation 'com.android.support:design:28.0.0'
+    // Replaced 'com.android.support' libraries with their 'androidx' equivalents
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'  // Updated from appcompat-v7
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'  // Updated from constraint-layout
+    implementation 'com.google.android.material:material:1.9.0'  // Updated from design
     implementation 'com.github.bumptech.glide:glide:4.16.0'
-    implementation 'com.android.support:palette-v7:28.0.0'
+    implementation 'androidx.palette:palette:1.0.0'  // Updated from palette-v7
     implementation 'com.sothree.slidinguppanel:library:3.4.0'
-    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'  // Updated from support-v4
     testImplementation 'junit:junit:4.13.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
-    implementation 'com.android.support:cardview-v7:28.0.0'
-    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'  // Updated from cardview-v7
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'  // Updated from recyclerview-v7
+
 }

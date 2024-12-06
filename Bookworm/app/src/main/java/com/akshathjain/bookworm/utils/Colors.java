@@ -1,7 +1,7 @@
 package com.akshathjain.bookworm.utils;
 
 import android.graphics.Bitmap;
-import android.support.v7.graphics.Palette;
+import androidx.palette.graphics.Palette;
 
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
 
